@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Import-Export</title>
+</head>
+
+<body>
+
+  <form action="import.php" method="post" enctype="multipart/form-data">
+    <div>
+      <input type="file" name="file" accept=".xlsx, .xls">
+    </div>
+    <br>
+    <button type="submit">Import Data</button>
+  </form>
+  <br><br>
+  <button onclick="exportData()">Export Data</button>
+
+  <script>
+    function exportData() {
+      window.location.href = 'export.php';
+    }
+  </script>
+
+</body>
+
+</html>
